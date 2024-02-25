@@ -7,6 +7,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  padding-top: 60px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f2f5;
 }
@@ -25,6 +26,12 @@ header {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   width: 100%; /* Ensure header spans the full width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* Optional: Add background color */
+  z-index: 1000;
 }
 
 .site-icon {
@@ -271,14 +278,20 @@ footer {
 }
 
 #crime-stats-chart {
-  width: 100%; /* Ensures the chart section takes full width */
-  margin-top: 20px; /* Space above the chart section */
-  text-align: center; /* Centers the chart image */
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
 }
 
-#pie-chart {
+.chart-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+  grid-gap: 10px; /* Gap between grid items */
+}
+
+.chart-image {
   max-width: 100%; /* Ensures the image is responsive */
-  height: auto;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -332,4 +345,9 @@ footer {
   #team-members {
     grid-template-columns: 1fr; /* Stacks members vertically on smaller screens */
   }
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
 }
