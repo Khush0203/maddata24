@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0056b3, #004494);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 28px;
+  font-weight: bold;
+  border-bottom: 3px solid #ffffff55;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.site-icon {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.site-header h1 {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.site-header h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.site-header h1 a:visited {
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+#map-container {
+  margin-bottom: 20px;
+}
+
+#map {
+  height: 300px;
+}
+
+#safety-zones {
+  max-height: 200px;
+}
+
+#crime-stats-chart {
+  padding: 20px;
+}
+
+.chart-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.chart-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .chart-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+#team-members {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.member {
+  background-color: #f0f2f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.member-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member h3 {
+  margin: 10px 0 5px;
+}
+
+.member p {
+  margin: 4px 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #team-members {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stay Safe Madison</title>
+    <link rel="stylesheet" href="style1.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="ICON.jpeg" type="image/x-icon" />
   </head>
@@ -195,10 +196,8 @@
         <h3
           style="
             text-align: center;
-            margin-top: 150px;
-            margin-right: 550px;
-            margin-left: 550px;
-            margin-bottom: 20px;
+            margin-top: 20px; /* Adjusted for mobile */
+            margin-bottom: 20px; /* Adjusted for mobile */
             background-color: #c4f2fc;
             padding: 20px;
             border-radius: 10px;
@@ -207,23 +206,22 @@
         >
           Recent Crime Map
         </h3>
-
-        <div class="iframe-container">
+      
+        <div class="iframe-container" style="text-align: center;">
           <iframe
             src="madison_crime_map.html"
-            width="80%"
-            height="500"
+            width="100%" /* Adjusted for mobile */
+            height="400" /* Adjusted for mobile */
           ></iframe>
         </div>
       </div>
+      
       <section id="crime-stats-chart">
         <h3
           style="
             text-align: center;
-            margin-top: 150px;
-            margin-right: 550px;
-            margin-left: 550px;
-            margin-bottom: 20px;
+            margin-top: 20px; /* Adjusted for mobile */
+            margin-bottom: 20px; /* Adjusted for mobile */
             background-color: #c4f2fc;
             padding: 20px;
             border-radius: 10px;
@@ -237,10 +235,17 @@
             src="pie.jpeg"
             alt="Pie Chart of Crime Statistics"
             class="chart-image"
+            style="max-width: 100%; height: auto;" /* Adjusted for mobile */
           />
-          <img src="stat.jpeg" alt="Statistics" class="chart-image" />
+          <img
+            src="stat.jpeg"
+            alt="Statistics"
+            class="chart-image"
+            style="max-width: 100%; height: auto;" /* Adjusted for mobile */
+          />
         </div>
       </section>
+      
     </main>
     <footer>
       <div class="container">
